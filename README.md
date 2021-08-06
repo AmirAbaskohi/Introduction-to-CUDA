@@ -24,4 +24,20 @@ With CUDA, you can leverage a GPU's parallel computing power for a range of high
 
 Also CUDA is the basis of most of the important DeepLearning frameworks such as `PyTorch` and `Tensorflow`.
 
+## Files
+
+There is `ipynb` file which containt the notebook of the codes and some explanation. Also `html` format also exists.
+
+The main code is cuda code for `Iris` dataset which exists in the `Iris` folder. To compile the file use below command:
+```
+nvcc -arch=sm_35 -rdc=true Iris.cu -o Iris -lcudadevrt
+```
+
+## Requirements
+
+You just need to have installed `gcc`, `g++`, and `cuda`. To install cuda use below links:
+* <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-microsoft-windows/index.html">Windows</a>.
+* <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">Linux</a>.
+* * <a href="https://docs.nvidia.com/cuda/archive/9.2/cuda-installation-guide-mac-os-x/index.html">Mac OS</a>.
+
 *Amirhossein Abaskohi*
